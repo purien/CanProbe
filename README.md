@@ -13,7 +13,7 @@ Three operating mode (default = scan, set trough the serial link)
 - diff dump the differential CAN packets, according to CanId filter (if any)
 - send, injection of CAN packets
 
-Main commmands (over serial link)
+Main commands (over serial link)
 - empty line (CrLf), iddle mode
 - scan CrLf, scan mode
 - diff CrLf, differential scan mode
@@ -22,4 +22,3 @@ Main commmands (over serial link)
 - mask  mask1...maskn CrLf, set a list of filter masks
 - can CanId Len Data CrLf, send a CAN packet
 - iso CanIdReq CanIdResp Len Data CrlF, send an ISO-TP packet (in Iddle mode only)
-

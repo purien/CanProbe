@@ -6,11 +6,11 @@ The low cost probe (about 30$) comprises the following components
 - An MCP2515 board (CAN probe)
 - An OBDII plug
 
-Communication through USB-Serial, 115200 bauds, 1 stop, no parity
+Communication via USB-Serial, 115200 bauds, 1 stop, no parity
 
-Three operating mode (default = scan, set trough the serial link)
-- scan, dump the CAN packets according to CanId filter (if any)
-- diff dump the differential CAN packets, according to CanId filter (if any)
+Three operating modes (default = scan, set through the serial link)
+- scan, dump CAN packets according to CanId filter (if any)
+- diff dump differential CAN packets, according to CanId filter (if any)
 - send, injection of CAN packets
 
 Main commands (over serial link)
@@ -21,4 +21,4 @@ Main commands (over serial link)
 - filter CanId1...CanIdn CrLf, set a list of CANId filters
 - mask  mask1...maskn CrLf, set a list of filter masks
 - can CanId Len Data CrLf, send a CAN packet
-- iso CanIdReq CanIdResp Len Data CrlF, send an ISO-TP packet (in Iddle mode only)
+- iso CanIdReq CanIdResp Len Data CrLf, send an ISO-TP packet (in Iddle mode only)
